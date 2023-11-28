@@ -1,0 +1,21 @@
+<html><head></head><body>
+<h1>Your Trip Data</h1>
+
+<table class= 'table'>
+	<tr><th>trip_id</th><th>username</th><th>date</th><th>destination</th><th>miles</th><th>gallons</th></tr>
+		% for row in rows:
+		
+			<tr>
+				<td>{{row[0]}}</td>
+				<td>{{row[1]}}</td>
+				<td>{{row[2]}}</td>
+				<td>{{row[3]}}</td>
+				<td>{{row[4]}}</td>
+				<td>{{row[5]}}</td>
+				
+			</tr>
+	
+		%end
+</tr>
+</table>
+</body></html>

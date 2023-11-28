@@ -1,0 +1,7 @@
+<html><head><title>Request Status</title></head>
+<body>
+
+<p>{{m.msg}}</p>
+<p><a href="/">Go to login page</a></p>
+
+</body></html>

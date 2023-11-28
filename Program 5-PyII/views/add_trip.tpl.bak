@@ -1,0 +1,16 @@
+<html><head><title>Add a Trip</title></head>
+<body>
+<p>Log in.</p>
+
+<form action="/enterTrip" method="post"> 
+
+  <p><input name="user" type="text" size="20"> Username</p>
+  <p><input name="date" type="text" size="10"> Date</p>
+  <p><input name="dest" type="text" size="20"> Destination</p>
+  <p><input name="miles" type="text" value='0' size="5"> Miles</p>
+  <p><input name="gallons" type="text" value='1.0' size="5"> Gallons</p>
+  <p><input type="submit"></p>
+
+</form>
+
+</body></html>
