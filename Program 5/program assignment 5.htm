@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+	<title>program assignment 5</title>
+    
+	
+<style>
+
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.w3-serif{font-family:"Times New Roman",Times,serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
+img{margin-bottom:-5px}a{color:inherit}
+table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
+.w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}
+.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.w3-table-all tr:nth-child(odd){background-color:#fff}
+.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
+.w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}
+.w3-centered tr th,.w3-centered tr td{text-align:center}
+.w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:6px 8px;display:table-cell;text-align:left;vertical-align:top}
+.w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
+
+.w3-badge{border-radius:50%}
+ul.w3-ul{list-style-type:none;padding:0;margin:0}
+ul.w3-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}
+ul.w3-ul li:last-child{border-bottom:none}
+.w3-tooltip,.w3-display-container{position:relative}
+.w3-fluid{max-width:100%;height:auto}
+.w3-tooltip .w3-text{display:none}
+.w3-tooltip:hover .w3-text{display:inline-block}
+
+
+
+/* .w3-code{font-family:Consolas,"courier new";font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #009688;word-wrap:break-word} */
+
+.w3-code{font-family:Consolas,"courier new";font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:10px 12px;border-left:4px solid silver; word-wrap:break-word}
+
+.w3-example,.w3-code,.w3-reference{margin:20px 0}
+.w3-card{border:1px solid #ccc}
+.w3-card-2,.w3-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.w3-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.w3-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
+.w3-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
+.w3-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
+
+
+iframe {margin-left: 25px;}
+.acode { margin-left: 30px; font-size:medium; font-family: Courier New, Courier, monospace; font-weight:500 }
+img {margin-left: 40px;}
+.codeLeft {font-size:medium; font-family: Courier New, Courier, monospace; font-weight:500}
+
+.aaStrings {color: maroon;}
+.aaComments {color: green;}
+.aaKeywords {color: blue;}
+pre {font-family: Consolas, "Lucida Console", Monaco, monospace; background-color:#EEE; padding-left: 20px;} 
+
+@media (min-width: 1200px) {
+  .w3-container {
+    width: 970px;
+  }
+}
+
+/* Base styles (regardless of theme) */
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+
+.bs-callout-danger h4 {
+color: #B94A48;
+}
+
+.bs-callout-warning h4 {
+color: #C09853;
+}
+
+.bs-callout-info h4 {
+color: #3A87AD;
+}
+
+
+.blue { color: #00F}
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(204,120,50); font-weight: bold; }
+.s3 { color: rgb(204,120,50); }
+.s4 { color: rgb(104,151,187); }
+.s5 { color: rgb(165,194,97); }
+.s6 { color: rgb(165,194,97);}
+.w3-example1 {margin:20px 0}
+</style>
+    
+    
+</head>
+
+<body style="width: 80%; margin: 0 auto;">
+<div class="w3-container">
+
+<h2>Programming Project 5: Sqlite3 and Python</h2>
+<p><img src="program%20assignment%205_files/noGlobals.png" alt="no global variables" width="83" hspace="9" height="54" align="left"> </p>
+<p>We have looked at a variety of ways to store information using 
+Python. But a company of any size does not use  text files, or pickle 
+things. They use, in almost all case, a relational database management 
+system. We are going to use sqlite3 for this assignment, and it will do 
+just fine for the amount of data we intend to wrangle.</p>
+<p>The database for this assignment is named <strong>tickets5.db</strong>.
+ The tickets5.db will be provided as a zipped file later on this page. 
+The database  has a little over 20 records, all of which started out as 
+part of a database put together in Minnesota that cataloged speeding 
+tickets issued in 2014. The original database had thousands of records. I
+ have whittled it down for this assignment to about 22 simplified 
+records. The table holding these records is named <strong>tickets</strong>. The first rows look like this.</p>
+<p><img src="program%20assignment%205_files/tickets1.PNG" alt="tickets table" width="404" height="225"></p>
+<p>The tickets table has these 5 fields. Do not modify the database 
+name, the table structure, or modify the column names; your code should 
+work with my copy of the database.</p>
+<ul>
+  <li><em>tid</em> is an auto-incrementing primary key</li>
+  <li>the next 3 fields:<em> actual_speed, posted_speed </em>and<em> age, </em>are all of type integer</li>
+  <li>the last field, <em>violator_sex</em>, is of type string.</li>
+</ul>
+<p>Here is the link to the database. Unzip before using:&nbsp; <a href="https://alt-5beddfe10b70f.blackboard.com/bbcswebdav/pid-47334535-dt-content-rid-349583820_2/courses/JFC_4226_CIT_144_55Z1_83609/JFC_4226_CIT_144_55Z1_83609_ImportedContent_20221205031405/programs/tickets5.zip">tickets5.zip</a></p>
+<p>Your program should be able to read the table in this database and be able to perform the following functions.</p>
+<p><img src="program%20assignment%205_files/p5dbMenu.PNG" alt="program menu" width="487" height="190"></p>
+<p>.Your program must have a main() function and separate functions to 
+handle the display of all tickets, and the ability to add a new ticket 
+record to the tickets table. For option 3 your function should allow the
+ user to enter either 'Male' or 'Female' and then have your code filter 
+the tickets table and show either all the Male offenders or all of the 
+Female offenders. </p>
+<p>When data is printed it all the data should be properly aligned and 
+look neat. Whether you are printing all the tickets or only part of 
+them, your output should display this information: ticketID, Posted MPH,
+ MPH Over, Age, and Violator Sex. </p>
+<p><img src="program%20assignment%205_files/p5dbOutput.png" alt="output" width="553" height="125"></p>
+<p>It is <em>important</em> to note that the original table has Posted 
+MPH (posted_speed) and actual_speed. You must calculate and display the 
+ MPH over the posted speed limit rather than displaying the actual_speed
+ itself</p>
+<p class="w3-code">mph over = actual speed - posted speed.</p>
+<p>For example the ticket associated with tid = 1 was doing 95 in a 70mpg zone, so miles over is 95 - 70 = 25.</p>
+<p>There are programs similar to this assignment in week 12, More Data, 
+and week 13, Classes 1. Study these examples carefully before starting 
+to code. In particular there is an explicit hint near the end of the 
+week 13 lecture notes that should be very useful.</p>
+<p> Start early. Email me the zipped code when finished or if you get stuck.</p>
+<p>If you'd like to see what thousands of traffic tickets look like, check out this link: &nbsp; <a href="https://www.twincities.com/2017/08/11/we-analyzed-224915-minnesota-speeding-tickets-see-what-we-learned/">https://www.twincities.com/2017/08/11/we-analyzed-224915-minnesota-speeding-tickets-see-what-we-learned/</a></p>
+<p>&nbsp;</p>
+</div> 
+<!-- end class=container -->
+
+
+
+
+
+</body></html>
