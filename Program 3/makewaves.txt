@@ -1,0 +1,26 @@
+alita,frisbee,11.5,3
+betty,shark-tooth necklace,9.25,4
+carlos,squirt gun,9.75,5
+diego,flip flops,7.77,1
+elena,snorkel,9.5,2
+frank,umbrella,32.2,3
+gregg,bag of shells,3.25,1
+hannah,sun glasses,8.22,6
+isiah,bag of shells,3.25,5
+joyce,umbrella,32.2,6
+katia,beach towel,5.3,5
+logan,flip flops,7.77,3
+misha,inflatable alligator,13.25,3
+nadia,bag of shells,3.25,3
+oliva,beach towel,5.3,4
+pablo,suntan oil,4.25,3
+quinten,snorkel,9.5,2
+ronda,boogie board,14.75,3
+sieko,frisbee,11.5,1
+takeo,inflatable alligator,13.25,2
+uriah,shark-tooth necklace,9.25,3
+vanya,boogie board,14.75,5
+wendie,bag of shells,3.25,5
+xenia,shark-tooth necklace,9.25,2
+yoshi,squirt gun,9.75,2
+zeldamay,shark-tooth necklace,9.25,1

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+	<title>program assignment 3</title>
+    
+	
+<style>
+
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.w3-serif{font-family:"Times New Roman",Times,serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
+img{margin-bottom:-5px}a{color:inherit}
+table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
+.w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}
+.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.w3-table-all tr:nth-child(odd){background-color:#fff}
+.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
+.w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}
+.w3-centered tr th,.w3-centered tr td{text-align:center}
+.w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:6px 8px;display:table-cell;text-align:left;vertical-align:top}
+.w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
+
+.w3-badge{border-radius:50%}
+ul.w3-ul{list-style-type:none;padding:0;margin:0}
+ul.w3-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}
+ul.w3-ul li:last-child{border-bottom:none}
+.w3-tooltip,.w3-display-container{position:relative}
+.w3-fluid{max-width:100%;height:auto}
+.w3-tooltip .w3-text{display:none}
+.w3-tooltip:hover .w3-text{display:inline-block}
+
+
+
+/* .w3-code{font-family:Consolas,"courier new";font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #009688;word-wrap:break-word} */
+
+.w3-code{font-family:Consolas,"courier new";font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:10px 12px;border-left:4px solid silver; word-wrap:break-word}
+
+.w3-example,.w3-code,.w3-reference{margin:20px 0}
+.w3-card{border:1px solid #ccc}
+.w3-card-2,.w3-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.w3-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.w3-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
+.w3-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
+.w3-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
+
+
+iframe {margin-left: 25px;}
+.acode { margin-left: 30px; font-size:medium; font-family: Courier New, Courier, monospace; font-weight:500 }
+img {margin-left: 40px;}
+.codeLeft {font-size:medium; font-family: Courier New, Courier, monospace; font-weight:500}
+
+.aaStrings {color: maroon;}
+.aaComments {color: green;}
+.aaKeywords {color: blue;}
+pre {font-family: Consolas, "Lucida Console", Monaco, monospace; background-color:#EEE; padding-left: 20px;} 
+
+@media (min-width: 1200px) {
+  .w3-container {
+    width: 970px;
+  }
+}
+
+/* Base styles (regardless of theme) */
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+
+.bs-callout-danger h4 {
+color: #B94A48;
+}
+
+.bs-callout-warning h4 {
+color: #C09853;
+}
+
+.bs-callout-info h4 {
+color: #3A87AD;
+}
+
+
+.blue { color: #00F}
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(204,120,50); font-weight: bold; }
+.s3 { color: rgb(204,120,50); }
+.s4 { color: rgb(104,151,187); }
+.s5 { color: rgb(165,194,97); }
+.s6 { color: rgb(165,194,97);}
+.w3-example1 {margin:20px 0}
+</style>
+    
+    
+</head>
+
+<body style="width: 80%; margin: 0 auto;">
+<div class="w3-container">
+
+<h2>Programming Project 3: Text Files, and Functions</h2>
+<p><img src="program%20assignment%203_files/noGlobals.png" alt="no global variables" width="83" hspace="8" height="54" align="left">People
+ go to the beach and often buy a bunch of stuff that will only be used 
+at the beach. Pretend you own a beach-side emporium that sells the usual
+ stuff: inflatable toys, suntan lotion, shark-tooth necklaces, flip 
+flops, and the like. You made 26 sales today, and you have captured that
+ sales data in a comma separated text file that lists the day's sales. 
+Here are the first several lines,</p>
+<p class="w3-code">alita,frisbee,11.5,3<br>
+  betty,shark-tooth necklace,9.25,4<br>
+  carlos,squirt gun,9.75,5<br>
+  diego,flip flops,7.77,1<br>
+  elena,snorkle,9.5,2 </p>
+<p>Shown below is the data separated out so it is easy to read. But the 
+file itself is comma separated, like the above. The file contains no 
+column names, but if it did the columns would be named <em>Customer Name, Item, Price, Quantity</em>. For example, alita bought 3 frisbees at $11.50 each. </p>
+<table cellspacing="0" cellpadding="0">
+  <colgroup><col width="134">
+  <col width="146">
+  <col width="64" span="2">
+  </colgroup><tbody><tr>
+    <td width="134">alita</td>
+    <td width="146">frisbee</td>
+    <td width="64" align="right">11.5</td>
+    <td width="64" align="right">3</td>
+  </tr>
+  <tr>
+    <td>betty</td>
+    <td>shark-tooth necklace</td>
+    <td align="right">9.25</td>
+    <td align="right">4</td>
+  </tr>
+  <tr>
+    <td>carlos</td>
+    <td>squirt gun</td>
+    <td align="right">9.75</td>
+    <td align="right">5</td>
+  </tr>
+  <tr>
+    <td>diego</td>
+    <td>flip flops</td>
+    <td align="right">7.77</td>
+    <td align="right">1</td>
+  </tr>
+  <tr>
+    <td>elena</td>
+    <td>snorkle</td>
+    <td align="right">9.5</td>
+    <td align="right">2</td>
+  </tr>
+  <tr>
+    <td>frank</td>
+    <td>umbrella</td>
+    <td align="right">32.2</td>
+    <td align="right">3</td>
+  </tr>
+</tbody></table>
+<p>Shown above is only part of the data file. As we said, the file itself has 26 rows of 4 data items per row. </p>
+<p>Your program should read the file and print each row along with the 
+total for each order. For example, elena bought 2 snorkels at $9.50 
+each, so her order total would be $19.00. We will assume there is no 
+sales tax.</p>
+<p>Additionally, after printing the row data, your program should print 
+grand total for the day (the sum of all the 26 individual totals) To 
+repeat, for each record your  program should print the name, item 
+purchased, price,  quantity purchased, and the order total for that 
+customer. After printing all the file data with calculations, you need 
+to print the total sales for the day. </p>
+<p>The comma-separated text file you need to use can be accessed using this link:  &nbsp; <a href="https://alt-5beddfe10b70f.blackboard.com/bbcswebdav/pid-47334526-dt-content-rid-349583806_2/courses/JFC_4226_CIT_144_55Z1_83609/JFC_4226_CIT_144_55Z1_83609_ImportedContent_20221205031405/programs/makewaves.txt" target="_blank">makewaves.txt</a>. &nbsp;</p>
+<p>Clicking the link probably opens the file in your browser. Save the 
+file somewhere you can find it. But the name of the file must be 
+makewaves.txt, and the 26 data rows must not be altered in any way. </p>
+<p>Here is and approximation of what your print-out should look like 
+using the first 5 rows as an example. Your output should look similar, 
+with all currency values rounded to 2 decimal places, but yours will 
+have all 26 records and at the end a display of the sales total for the 
+whole day (grand total the 26 individual totals). Your output should 
+look similar; it need not be exact. But everything must line up neatly, 
+including the decimal places. It's time we get good at formatting 
+output.</p>
+<pre style="font-family:'Lucida Console', Monaco, monospace">Name    Item                  Price     Quantity   Total
+alita   frisbee               11.50      3         34.50
+betty   shark-tooth necklace   9.25      4         37.00
+carlos  squirt gun             9.75      5         48.75
+dieg0   flip flops             7.77      1          7.77
+elena   snorkel                9.50      2         19.00
+
+... and 21 more rows...
+... and then print the total sales for the day
+</pre>
+<p>To get full credit your program needs to accomplish the following.</p>
+<ul>
+  <li>Your code needs to read the makewaves.txt data from the supplied 
+text file. Do not modify the file, and it needs to keep its current name
+ and structure. I will use my copy of the file to test your program. So,
+ the file opened must be named makewaves.txt and it must contain the 
+same records used in the link above.</li>
+  <li>You need to print the 4 pieces of information in all 26 rows along
+ with a total for that person's purchase. Printouts need to be neat and 
+properly aligned, where the names and items are left justified and 
+decimals line up for currency values. If you format the currencies to 2 
+decimal places, which is a requirement, this will be easier to do. </li>
+  <li>You need to process the data with a loop, and that loop should be 
+able to work properly even if the number of purchases in the file varies
+ from day to day. That is, don't use 26 as a magic number. The program 
+should work no matter how many records the file might contain.</li>
+  <li>Your program must have at least 2 functions written by you. The 
+first one is a main() function which reads the data file.    You could 
+easily have more than 2 functions if you choose, but you need 2 minimum,
+ one of which is named main() that reads the data. </li>
+  <li>The second function must calculate the total for each customer, 
+receiving as parameters the price and quantity for each customer when 
+called from the main loop. Knowing how to do arguments/return values is a
+ goal of the exercise.</li>
+</ul>
+<p>Here's kind of a general outline, name the non-main function anything you want.</p>
+<p class="w3-code">funtion2CalculateCustomerTotal(parameters):<br>
+  calculate customer total<br>
+  return total<br>
+  <br>
+  function main():<br>
+  loop thru the data<br>
+  call the other function sending a customer's info as arguments, and receive the return total value<br>
+  print a row
+  <br>
+  after reading and printing all the data along with the customer total<br>
+  then print the total for the whole day<br>
+  <br>
+  main()
+</p>
+<p> <strong>Important</strong>: First, read all the related material. 
+Then study the best example to use for this assignment, whcih comes from
+ the lecture notes on Strings. It is the program that calculates the 
+sales commissions, about 3/4 of the way down the page. This assignment 
+does not require using a list; unlike the example mentioned in the 
+Strings notes, we are not counting anything here. Please start early.</p>
+<p><em>For this assignment and all future assignments you may not use any global variables, unless stated otherwise.</em></p>
+<p>If you get good and stuck email me your zipped code and we'll get it working.</p>
+<h3>How To Submit Your Program</h3>
+<p>When you're finished put the program in a new folder and name that 
+folder using  your name and project number. For example the folder might
+ be named <span class="codeLeft">AJSmith-prog1</span>.<strong> <em>Please put your name on the folder as well as having your name in a comment in the file itself.</em></strong>
+ I get lots of programs; putting your name on the folder help keep 
+things organized and shortens the amount of time it takes to get things 
+graded. </p>
+<p>After creating the folder, Zip (compress) the folder by right-clicking on it, and then choosing <strong>Send to</strong> from the pop-up menu, then select <strong>Compressed folder</strong>. This will crate a new zipped folder identifiable by the little zipper on the folder icon. </p>
+<p><img src="program%20assignment%203_files/compress.gif" alt="compressing a folder" width="585" height="336"></p>
+<p>Then, attach the zipped folder to an email and send it to me.</p>
+<p>Thanks...</p>
+<p>Again, if there are questions about this, let me know: mark.prather@kctcs.edu..</p>
+<p>&nbsp;</p>
+	
+            
+            
+</div> <!-- end class=container -->
+
+
+
+
+
+</body></html>
