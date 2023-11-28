@@ -17,18 +17,18 @@
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%201-PyII>Program 6</a></h2>
 <p></p>
 
-<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 7</a></h2>
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%202-PyII>Program 7</a></h2>
 <p></p>
 
-<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 8</a></h2>
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%203-PyII>Program 8</a></h2>
 <p></p>
 
-<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 9</a></h2>
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204-PyII>Program 9</a></h2>
 <p></p>
 
-<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 10</a></h2>
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%205-PyII>Program 10</a></h2>
 <p></p>
 
-<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 11</a></h2>
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%206-PyII>Program 11</a></h2>
 <p></p>
 
