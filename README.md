@@ -8,5 +8,27 @@
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%203>Program 3</a></h2>
 <p>Using Python code to read a txt file, essentially a table is made from the txt file displaying 26 rows of data.  It includes two functions, a main function and a function that calculates the total for each customer, receiving as parameters the price and quantity for each customer when called from the main loop. Knowing how to do arguments/return values is a goal of the exercise.</p>
 
-<h2><a href=>Program 4</a></h2>
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
 <p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
+<h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
+<p></p>
+
