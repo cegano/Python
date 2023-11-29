@@ -9,16 +9,16 @@
 <p>Using Python code to read a txt file, essentially a table is made from the txt file displaying 26 rows of data.  It includes two functions, a main function and a function that calculates the total for each customer, receiving as parameters the price and quantity for each customer when called from the main loop. Knowing how to do arguments/return values is a goal of the exercise.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%204>Program 4</a></h2>
-<p></p>
+<p>This program is meant to read a list of dictionairies, from the included data file, using DictReader() and uses DictWriter() to store any added data.  There is a menu of four options for the user to choose from:  One to display all data for all racers, one to display a runners individual race average in minutes, one to add a new runner and race data and the last to save and store all data back to the data file.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%205>Program 5</a></h2>
-<p></p>
+<p>Using a database from SQLite3 this program uses information from speeding tickets on a certain day in a particular area.  The program has functions that allow all of the data to be displayed, a new ticket to be added and a filter that enables tickets by either males or females to be displayed.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%201-PyII>Program 6</a></h2>
-<p></p>
+<p>In this program, I used a python class to represent contact information and helper function to print data requested.  The user may enter a number from a list of options: 1. Display all contacts, 2. Add new contact and 3. Save and quit.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%202-PyII>Program 7</a></h2>
-<p></p>
+<p>wxPython is utilized in this program.  TextCtrl, radio buttons, check boxes, buttons and StaticText boxes are used to create an order form for the user to utilize.  When the 'Calculate Total' button is pressed by the user their total is calculated and a shipping summary is displayed below the buttons.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%203-PyII>Program 8</a></h2>
 <p></p>
