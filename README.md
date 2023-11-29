@@ -21,14 +21,15 @@
 <p>wxPython is utilized in this program.  TextCtrl, radio buttons, check boxes, buttons and StaticText boxes are used to create an order form for the user to utilize.  When the 'Calculate Total' button is pressed by the user their total is calculated and a shipping summary is displayed below the buttons.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%203-PyII>Program 8</a></h2>
-<p></p>
+<p>Similarly to the last program, this program utilizes wxPython, adding in wxListCtrl and wxDialog box as well as adding a database created by me using SQLite.  It includes 3 buttons, one to display all of the ticket data into the list control.  Another button is used to open a wx Dialog that allows the user to enter the 8 data items used for an individual record, when the user closes the dialog the new record will be SQL INSERTED to the tickets table (speeding_ticket.db) and the list control re-populated so as to display the inserted record. Lastly there is a close button to close the program.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%204-PyII>Program 9</a></h2>
-<p></p>
+<p>Using wxPython, this program connects to a database in SQLite to get previous data about 9 stocks.  This program then connects to an API called finnhub.io to retrieve current data on said stocks.  Once that data is retrieved it is compared to the saved data from the database, i.e. the current price for each stock with the original purchase price. Then, using the number of shares purchased, the current profit or loss for each stock is calculated and displayed.  The net profit or loss after looking the results of all 9 of the individual stock values to see overall gains or losses.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%205-PyII>Program 10</a></h2>
-<p></p>
+<p>This program is about very basic web site navigation as well as having the browser and web server interact with a simple database using Bottly.py. Two tables from a database are used to authenticate login information and display data about a particular user's work trip information using simple template files to navigate. As well as displaying data, the user may add trip data to the database table.</p>
 
 <h2><a href=https://github.com/cegano/Python/tree/main/Program%206-PyII>Program 11</a></h2>
-<p></p>
+<p>Similarly to Program 10, Bottle.py and a database with two tables are used. The user is able to view weekly pay calculations for employees filtered by department and to edit or update the hours worked for a given employee. Unlike the previous program, the navigation uses a main layout template that includes Bootstrap styling that allows substituting in the sub templates.
+</p>
 
